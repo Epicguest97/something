@@ -6,7 +6,7 @@ function App() {
     // Random log to confirm the fetch call is being made
     console.log("Fetching IP address...");
 
-    fetch('/api/log-ip')
+    fetch('/api/log-api.js')
       .then(response => response.json())
       .then(data => console.log('Logged IP:', data.ip))
       .catch(error => console.error('Error logging IP:', error));
